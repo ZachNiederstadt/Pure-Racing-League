@@ -5,35 +5,37 @@
 	<p>World Series class driving, with close battles and fun rivalries</p>
 </div>
 
-<div class="mt-10 flex justify-center">
+<div class="mx-auto mt-10 flex justify-center">
 	<h2>Current and former World Series drivers involved</h2>
 </div>
-<div class="m-5 flex auto-cols-auto auto-rows-auto grid-cols-3 justify-center gap-5">
-	<div>
+<div
+	class="m-5 mx-auto flex grid auto-cols-auto auto-rows-auto grid-cols-3 gap-5 sm:grid-cols-4 sm:justify-center md:grid-cols-5 lg:grid-cols-7"
+>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/calen.jpg" />
 		<p class="name flex justify-center">Calen Roach</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/robby.jpg" />
 		<p class="name flex justify-center">Robby Heck</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/mehdi.jpg" />
 		<p class="name flex justify-center">Mehdi Hafidi</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/cyrus.jpg" />
 		<p class="name flex justify-center">Cyrus Cross</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/dean.jpg" />
 		<p class="name flex justify-center">Dean Hedlt</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/regalado.jpg" />
 		<p class="name flex justify-center">Alonso Regalado</p>
 	</div>
-	<div>
+	<div class="align-center container flex grid items-center justify-center">
 		<img class="drivers" src="/drivers/andrew.jpg" />
 		<p class="name flex justify-center">Andrew Lee</p>
 	</div>
