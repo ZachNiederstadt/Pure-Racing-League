@@ -1,6 +1,12 @@
 <script>
 	import '../app.css';
+	import { Select } from 'bits-ui';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
+	import { Button } from '$lib/components/ui/button/index.js';
+
 	let { children } = $props();
+
+	// const pages = [{ label: 'Schedule' }, { label: 'Standings' }, { label: 'About' }];
 </script>
 
 <div class="body">
@@ -8,63 +14,43 @@
 		class=" bg flex h-lvh min-h-screen flex-col content-center justify-center bg-opacity-50 bg-center"
 		style="background-image: url('/background.avif');"
 	>
-		<header class="border-gray-200 bg-white dark:bg-gray-900">
-			<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-				<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+		<header class="mb-5 border-gray-200 bg-black">
+			<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 pb-5">
+				<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 					<img alt="" class="flex w-[200px] pt-2" src="/logos/prl.jpg" />
 					<!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
 			<span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
 				>Flowbite</span -->
 				</a>
-				<button
-					data-collapse-toggle="navbar-default"
-					type="button"
-					class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-					aria-controls="navbar-default"
-					aria-expanded="false"
-				>
-				</button>
-				<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-					<ul
-						class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-black p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse dark:border-gray-700 dark:bg-black md:dark:bg-black"
-					>
-						<li>
-							<a
-								href="#"
-								class="block rounded bg-blue-700 px-3 py-2 text-white md:bg-transparent md:p-0 md:text-blue-700 dark:text-white md:dark:text-blue-500"
-								aria-current="page">Home</a
+				<DropdownMenu.Root class="bg-black">
+					<DropdownMenu.Trigger asChild let:builder>
+						<Button variant="variant" builders={[builder]}>
+							<svg
+								class="h-5 w-5"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 17 14"
 							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-								>About</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-								>Schedule</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-								>Standings</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-								>Sign-Up</a
-							>
-						</li>
-					</ul>
-				</div>
+								<path
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M1 1h15M1 7h15M1 13h15"
+								/>
+							</svg></Button
+						>
+					</DropdownMenu.Trigger>
+					<DropdownMenu.Content class="w-56">
+						<DropdownMenu.Label>Menu</DropdownMenu.Label>
+						<DropdownMenu.Separator />
+
+						<DropdownMenu.Item href="/schedule">Schedule</DropdownMenu.Item>
+						<DropdownMenu.Item href="/standings">Standings</DropdownMenu.Item>
+						<DropdownMenu.Item href="/about">About</DropdownMenu.Item>
+					</DropdownMenu.Content>
+				</DropdownMenu.Root>
 			</div>
 		</header>
 
@@ -87,11 +73,12 @@
 	.body {
 		display: flex;
 		flex-direction: column;
-		height: 100dvh;
+		height: 100vh;
 	}
 	header {
 		background-color: rgb(0, 0, 0);
 		height: 77px;
+		margin-top: 0;
 	}
 
 	main {
