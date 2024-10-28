@@ -11,7 +11,7 @@
 
 <div class="body">
 	<main
-		class=" bg flex h-lvh min-h-screen flex-col content-center justify-center bg-opacity-50 bg-center"
+		class="bg flex h-dvh min-h-screen flex-col content-center justify-center bg-opacity-50 bg-center"
 		style="background-image: url('/background.avif');"
 	>
 		<header class="mb-5 border-gray-200 bg-black">
@@ -54,7 +54,9 @@
 			</div>
 		</header>
 
-		{@render children()}
+		<div class="flex w-full justify-center overflow-y-scroll">
+			{@render children()}
+		</div>
 		<footer class="sticky bottom-0 flex justify-center gap-2 pb-10">
 			<a class="social" href="https://x.com/PureRacingGT">
 				<img src="/sociallogos/x.png" />
