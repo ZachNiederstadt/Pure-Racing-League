@@ -7,7 +7,7 @@
 <div class="ml-10 mr-10 pt-10">
 	<h1 class="font-orbitron text-2xl tracking-widest md:text-4xl">Fastest GT League</h1>
 	<h1 class="font-md font-orbitron text-2xl tracking-widest md:text-4xl">in North America</h1>
-	<p class="font-ubuntu mb-10 pt-5 text-xs tracking-widest md:text-lg">
+	<p class="mb-10 pt-5 font-ubuntu text-xs tracking-widest md:text-lg">
 		World Series class driving, with close battles and fun rivalries
 	</p>
 </div>
@@ -22,31 +22,31 @@
 >
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/calen.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-widest">Calen Roach</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-widest">Calen Roach</p>
 	</div>
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/robby.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-widest">Robby Heck</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-widest">Robby Heck</p>
 	</div>
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/mehdi.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-widest">Mehdi Hafidi</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-widest">Mehdi Hafidi</p>
 	</div>
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/cyrus.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-wide">Cyrus Cross</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-wide">Cyrus Cross</p>
 	</div>
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/dean.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-widest">Dean Hedlt</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-widest">Dean Hedlt</p>
 	</div>
 	<div class="align-center container flex grid items-center justify-center p-3">
 		<img class="drivers" src="/drivers/andrew.jpg" />
-		<p class="name font-ubuntu flex justify-center pt-2 tracking-widest">Andrew Lee</p>
+		<p class="name flex justify-center pt-2 font-ubuntu tracking-widest">Andrew Lee</p>
 	</div>
 </div>
 <div class="flex justify-center pb-12">
-	<Button href="/about" class="font-ubuntu flex justify-center">About Us</Button>
+	<Button href="/about" class="flex justify-center font-ubuntu">About Us</Button>
 </div>
 
 <style>
