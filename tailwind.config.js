@@ -56,6 +56,7 @@ const config = {
 			},
 			fontFamily: {
 				'orbitron': ['orbitron', 'sans-serif'],
+				'ubuntu': ['ubuntu', 'sans-serif'],
 				sans: [...fontFamily.sans]
 			}
 		}
